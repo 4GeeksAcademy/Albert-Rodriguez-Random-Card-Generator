@@ -1,6 +1,13 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 .card {
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 10px;
+  box-shadow: inset;
+}
+
+body {
+  background-color: #0b6623;
+  background-image: url("assets/img/green-fabric-with-black-background.jpg");
+  background-size: cover;
 }

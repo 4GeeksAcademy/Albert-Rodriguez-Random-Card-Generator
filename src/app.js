@@ -3,6 +3,12 @@ import "bootstrap";
 import "./style.css";
 
 window.onload = function() {
+  document.getElementById("rdmButton").addEventListener("click", function() {
+    getRandomCard();
+  });
+};
+//getRandomCard();
+function getRandomCard() {
   const suits = ["&spades;", "&clubs;", "&hearts;", "&diams;"];
   const cards = [
     "A",
@@ -34,5 +40,6 @@ window.onload = function() {
   } else {
     document.getElementById("top-suit").style.color = "black";
     document.getElementById("bottom-suit").style.color = "black";
+    document.getElementById("card-number").style.color = "black";
   }
-};
+}

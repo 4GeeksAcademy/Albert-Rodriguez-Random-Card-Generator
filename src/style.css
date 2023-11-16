@@ -11,3 +11,16 @@ body {
   background-image: url("assets/img/green-fabric-with-black-background.jpg");
   background-size: cover;
 }
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.spin-animation {
+  animation: spin 0.5s linear;
+}
